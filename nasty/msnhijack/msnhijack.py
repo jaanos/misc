@@ -1,6 +1,6 @@
 import socket
 
-addr = '192.168.1.100'
+addr = '192.168.1.218'
 email = 'satan@evil.com'
 nick = 'Satan'
 iro = "IRO 1 1 1 %s %s\r\n" % (email, nick)
