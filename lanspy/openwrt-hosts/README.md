@@ -8,6 +8,8 @@ Tested on OpenWRT 10.03 Backfire running on Asus WL500G Premium v1 (2.6 kernel) 
 
 openwrt-hosts uses the `sorttable.js` JavaScript library by Stuart Langridge (http://www.kryogenix.org/code/browser/sorttable/).
 
+Originally written in 2011, with minor improvements added in the course of the next few years.
+
 ## Installation
 
 Copy the contents of this folder to `/www/` on OpenWRT. Then edit the `cgi-bin/hosts.sh` file. The following three lines near the start of the file can be customized:
