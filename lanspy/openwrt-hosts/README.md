@@ -6,7 +6,7 @@ It should work on any system with a web server capable of running shell scripts,
 
 Tested on OpenWRT 10.03 Backfire running on Asus WL500G Premium v1 (2.6 kernel) and v2 (2.4 kernel). Note that listing associated wireless clients is only supported on the 2.4 kernel, as the version of OpenWRT with the 2.6 kernel does not include the `wlc` binary.
 
-openwrt-hosts uses the `sorttable.js` JavaScript library by Stuart Langridge (http://www.kryogenix.org/code/browser/sorttable/).
+openwrt-hosts uses the [`sorttable.js`](http://www.kryogenix.org/code/browser/sorttable/) JavaScript library by Stuart Langridge.
 
 Originally written in 2011, with minor improvements added in the course of the next few years.
 
