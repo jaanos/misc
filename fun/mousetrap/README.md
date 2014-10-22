@@ -1,6 +1,6 @@
 # mousetrap.py
 
-A solver for the Mouse (formerly Mouse Trap) mobile game by MagmaMobile (http://www.magmamobile.com/game.aspx?game=Mouse).
+A solver for the [Mouse](http://www.magmamobile.com/game.aspx?game=Mouse) (formerly Mouse Trap) mobile game by MagmaMobile.
 
 Supports breadth-first and depth-first search strategies. Some example initial configurations are provided.
 
