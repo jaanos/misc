@@ -1,0 +1,57 @@
+export DIR_HIST=()
+export DIR_POS=0
+
+CHG_TITLE() {
+	if [ "$TERM" != "linux" ]; then
+		echo -ne "\033]0;[$1] $USER@$HOSTNAME: $(echo -n $PWD | sed -r "s@^/home/$USER(/|\$)@~\1@")\007" >&2
+	fi
+}
+
+# some more ls aliases
+alias ll='ls -l'
+alias la='ls -A'
+alias lla='ls -Al'
+alias lt='ls -ltr'
+
+# navigation
+alias push='if [ "${DIR_HIST[$DIR_POS]}" != "`pwd`" ]; then let DIR_POS++; DIR_HIST[$DIR_POS]=`pwd`; fi'
+alias dirhist='push; i=1; while [ $i -le ${#DIR_HIST[@]} ]; do if [ $i -eq $DIR_POS ]; then echo -ne "$i: \033[1;4m${DIR_HIST[$i]}\033[0m\t"; else echo -ne "$i: ${DIR_HIST[$i]}\t"; fi; let i++; done; echo; #'
+alias back='push; if [ $DIR_POS -gt 1 ]; then let DIR_POS--; \cd "${DIR_HIST[$DIR_POS]}"; fi; #'
+alias fwd='push; if [ $DIR_POS -lt ${#DIR_HIST[@]} ]; then let DIR_POS++; \cd "${DIR_HIST[$DIR_POS]}"; fi; #'
+alias goto='push; . /home/janos/goto.sh'
+alias cd='push; \cd'
+alias cd..='cd ..'
+alias cd...='cd ../..'
+alias n='nautilus'
+alias n.='nautilus .'
+
+# various
+alias ssha='CHG_TITLE ssh-add; ssh-add ~/.ssh/identity'
+alias sshr='ssh-add -D'
+alias lssh='ps -ef | grep ssh'
+alias psgrep='ps -ef | grep'
+
+# applications
+alias gap='CHG_TITLE gap; gap'
+alias ipython='CHG_TITLE ipython; ipython'
+alias python='CHG_TITLE python; python'
+alias python3='CHG_TITLE python3; python3'
+alias octave='CHG_TITLE octave; octave'
+alias hping3='CHG_TITLE hping3; \sudo hping3'
+alias kismet='CHG_TITLE kismet; kismet'
+alias svim='CHG_TITLE "sudo vim"; \sudo vim'
+alias sudo='CHG_TITLE sudo; sudo'
+alias vim='CHG_TITLE vim; vim'
+alias less='CHG_TITLE less; less'
+alias top='CHG_TITLE top; top'
+alias man='CHG_TITLE man; man'
+alias svn='CHG_TITLE svn; svn'
+alias psql='CHG_TITLE psql; psql'
+alias mysql='CHG_TITLE mysql; mysql'
+alias R='CHG_TITLE R; R'
+alias ocaml='CHG_TITLE ocaml; ledit -l $(($COLUMNS-2)) ocaml'
+alias ghci='CHG_TITLE ghci; ghci'
+
+if [ -n "$SSH_CONNECTION" ]; then
+    alias firefox='firefox -no-remote'
+fi
