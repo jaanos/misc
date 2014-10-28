@@ -1,0 +1,543 @@
+// LPP.txt
+// Proge Ljubljanskega potniškega prometa
+// uporablja je javanski razred LPP
+//
+// Vsaka proga naj se zaène z glavo oblike:
+// št. proge,zaèetna postaja,konèna postaja,število postaj
+// Št. proge je tipa String, zato lahko uporablja èrke, medtem ko mora biti število postaj
+// (vkljuèno z zaèetno in konèno) pravo celo število. Med polji ne sme biti vejic.
+// Sledi seznam postaj (brez zaèetne in konène). Enosmerne postaje so oznaèene z -1
+// (èe kažejo v nasprotno smer naštevanja postaj) ali 1. Èe je naštetih veè prog, kot je
+// navedena dolžina proge, odveène proge ne bodo upoštevane.
+
+//Število prog - mora biti prva neprazna vrstica!
+24
+
+1,Vizmarje,Mestni log,24
+Sentvid
+Podgora
+Prusnikova
+Trata
+Dravlje
+Kompas
+Avtomontaza
+Remiza,-1
+Slov. avto
+Kino Siska
+Stara cerkev
+Tivoli
+Kolizej
+Posta
+Drama
+Askerceva
+Tobacna
+Hajdrihova
+Jadranska
+Gerbiceva
+Krimska
+Koprska
+
+2,Zelena jama,Nove Jarse,26
+Pokopaliska
+Zale
+Savsko naselje
+Viadukt
+Friskovec
+Kolodvor
+Bavarski dvor
+Posta,-1
+Kongresni trg
+Magistrat
+Krekov trg
+Ambrozev trg
+Klinicni center
+Bolnica
+Trznica Moste
+Zaloska
+Kajuhova
+Tovorni Kolodvor
+Kavciceva
+Roziceva
+Sola Jarse
+Jarse
+Kodrova
+Zito
+
+3,Rudnik,Litostroj,19
+Spodnji Rudnik
+Zgornji Rudnik
+Peruzzijeva
+Akademija
+Rakovnik
+Strelisce
+Privoz
+Gornji trg
+Krizanke
+Drama
+Posta
+Kolizej
+Tivoli
+Stara cerkev
+Kino Siska
+Slov. avto
+Litostrojska
+
+5,Podutik,Stepanjsko naselje,25
+Murkova
+Omersova
+Draveljska gmajna
+Koseze
+Bratov Ucakar
+Kneza Koclja
+Sisenska
+Slov. avto
+Kino Siska
+Stara cerkev
+Tivoli
+Kolizej
+RTV
+Ilirska
+Hrvatski trg
+Ambrozev trg
+Roska,1
+Gornje Poljane
+Glonarjeva
+Jana Husa
+Kodeljevo
+Stepanja vas
+Emona
+
+6,Crnuce,Dolgi most,24
+Rogovilc
+Kolodvor Crnuce
+Sava
+Jezica
+Ruski car
+Stozice
+Smelt
+AMZS
+Mercator
+Stadion
+Astra
+Razstavisce
+Bavarski dvor
+Posta
+Drama
+Askerceva
+Tobacna
+Hajdrihova
+Stan in dom
+Glince
+Vic
+Bonifacija
+
+7,Przan,Nove Jarse,23
+Andreja Bitenca
+Plesiceva
+Cebelarska
+Trznica Koseze
+Zg. Siska
+Bolnica P. Drzaja
+Na jami
+Stara cerkev
+Tivoli
+Kolizej
+Bavarski dvor
+Razstavisce
+Bezigrad
+Prekmurska
+Savske stolpnice
+Zale
+Pokopaliska
+Sola Jarse
+Jarse
+Kodrova
+Zito
+
+7a,Przan,Letaliska,29
+Andreja Bitenca
+Plesiceva
+Cebelarska
+Trznica Koseze
+Zg. Siska
+Bolnica P. Drzaja
+Na jami
+Stara cerkev
+Tivoli
+Kolizej
+Bavarski dvor
+Razstavisce
+Bezigrad
+Prekmurska
+Savske stolpnice
+Zale
+Pokopaliska
+Sola Jarse
+Jarse
+Kodrova
+Zito
+Nove Jarse,-1
+Bratislavska
+Yulon
+Leskoskova
+GZL
+Rog
+
+8,Brod,Jezica,29
+Martinova,1
+Ob daljnovodu,-1
+Tabor
+Na klancu
+Kosmaceva
+Sentvid
+Podgora
+Prusnikova
+IMP
+Tehnounion
+Ljubljanske brigade
+Litostroj
+Litostrojska
+Slov. avto
+Kino Siska
+Stara cerkev
+Tivoli
+Kolizej
+Bavarski dvor
+Razstavisce
+Astra
+Stadion
+Mercator
+AMZS
+Smelt
+Stozice
+Ruski car
+
+9,Trnovo,Stepanjsko naselje,22
+Veliki stradon
+Pot na Rakovo jelso
+Murgle
+Ziherlova
+Kolezija
+Mirje
+Drama
+Posta
+Bavarski dvor
+Kolodvor
+Friskovec
+Poliklinika
+Klinicni center
+Bolnica
+Trznica Moste
+Zaloska
+Ob sotocju,1
+Kodeljevo
+Stepanja vas
+Emona
+
+10,Kongresni trg,Zadobrova,18
+Magistrat
+Krekov trg
+Ambrozev trg
+Klinicni center
+Bolnica
+Trznica Moste
+Zaloska
+Pot na Fuzine
+Brodarjev trg
+Preglov trg
+Rusjanov trg
+Chengdujska
+Studenec
+Polje
+Polje - kolodvor
+Novo Polje
+
+11,Zalog,Bezigrad,24
+Saturnus,1
+Zeleni gaj
+Zadruzni dom
+Silos
+Petrol
+Cesta na Vevce
+Polje
+Studenec
+Chengdujska
+Osenjakova
+Archinetova
+Zaloska
+Trznica Moste
+Bolnica
+Klinicni center
+Ambrozev trg
+Krekov trg
+Magistrat
+Kongresni trg
+Posta,1
+Bavarski dvor
+Razstavisce
+
+12,Vevce,Bezigrad,19
+Cesta na Vevce
+Polje
+Polje - kolodvor
+Novo Polje
+Zadobrova
+Sneberje
+Hrastje
+Nove Jarse,1
+Zito
+Kodrova
+Jarse
+Sola Jarse
+Srediska
+Viadukt
+Friskovec
+Kolodvor
+Razstavisce
+
+13,Kongresni trg,Sostro,19
+Magistrat
+Krekov trg
+Ambrozev trg
+Roska,1
+Gornje Poljane
+Pod Golovcem
+Stepanja vas
+Emona
+Rast
+Hrusica
+Cesta v Bizovik
+Dobrunje
+Posta Dobrunje
+KPL
+Zadvor
+Cesta v Zavoglje
+Krizisce Sostro
+
+14,Vrhovci,Savlje,24
+Brdo
+Preval
+Podmornica
+Visko polje
+Jamnikarjeva
+Cesta XV
+Studentsko naselje
+Pod Roznikom
+Cankarjev dom
+Posta
+Bavarski dvor
+Razstavisce
+Hranilniska
+Parmova
+Br. Zidan
+Podmilscakova
+Vodovodna
+Pohorskega bataljona
+Gorjanceva
+7. septembra
+Cerinova
+Kalisnikov trg
+
+15,Medvode,Bavarski dvor,20
+Novo naselje
+Ob igriscu,1
+Medvoska s. p.
+Medno
+Stanezice
+Sentvid
+Podgora
+Prusnikova
+Trata
+Dravlje
+Kompas
+Avtomontaza
+Remiza,-1
+Slov. avto
+Kino Siska
+Stara cerkev
+Tivoli
+Kolizej
+
+16,Gameljne,Bavarski dvor,24
+Rasica
+Zgornje Gameljne,-1
+Smartno
+Tacen
+Tacenski most
+Ob daljnovodu
+Tabor
+Na klancu
+Kosmaceva
+Sentvid
+Podgora
+Prusnikova
+Trata
+Dravlje
+Kompas
+Avtomontaza
+Remiza,-1
+Slov. avto
+Kino Siska
+Stara cerkev
+Tivoli
+Kolizej
+
+17,Kongresni trg,Letaliska,18
+Posta,1
+Bavarski dvor
+Kolodvor
+Friskovec
+Viadukt
+Srediska
+Pokopaliska
+Jarse
+BTC uprava
+BTC trznica
+BTC Kolosej
+BTC Emporium
+Yulon
+Leskoskova
+GZL
+Rog
+
+//Krožna proga - preveri dejansko pot!
+18a,Kino Siska,Tovarna Lek,9
+Drenikova,1
+Slov. avto,-1
+Litostrojska,-1
+Litostroj,-1
+Tiki
+Mostovna
+Toplarna
+
+18b,Kino Siska,Tovarna Lek,9
+Drenikova,-1
+Slov. avto,1
+Litostrojska,1
+Litostroj,1
+Tiki
+Mostovna
+Toplarna
+
+19,Barje,Tomacevo,20
+Iski most
+Lahova pot
+Ilovica
+Livada
+Pot na Rakovo jelso
+Murgle
+Ziherlova
+Kolezija
+Mirje
+Drama
+Posta
+Bavarski dvor
+Razstavisce
+Astra
+Topniska
+Savske stolpnice
+Tomacevska
+Nove Zale
+
+20,Nove Stozice,Fuzine,22
+Puhova
+Kardeljeva ploscad
+Gasilska brigada
+Krziceva
+Bezigrad
+Razstavisce
+Bavarski dvor
+Posta,-1
+Kongresni trg
+Magistrat
+Krekov trg
+Ambrozev trg
+Klinicni center
+Bolnica
+Trznica Moste
+Zaloska
+Pot na Fuzine
+Brodarjev trg
+Preglov trg
+Rusjanov trg
+
+21,Bericevo,Bavarski dvor,24
+Reaktor
+Sentjakob
+Belinka
+Nadgorica
+Jeza
+Zasavska
+OS Maksa Pecar
+Pot v Hrastovec
+Pot v Smrecje
+Polanskova
+Primoziceva,-1
+Rogovilc,1
+Kolodvor Crnuce
+Elma
+Slandrova
+Smelt
+AMZS
+Mercator
+Stadion
+Astra
+Razstavisce
+Kolizej,1
+
+21a,Bericevo,Bavarski dvor,31
+Reaktor
+Sentjakob
+Belinka
+Nadgorica
+Jeza
+Zasavska
+OS Maksa Pecar
+Pot v Hrastovec
+Pot v Smrecje
+Polanskova
+Primoziceva,-1
+Rogovilc,1
+Kolodvor Crnuce
+Elma
+Slandrova
+Obrtna cona
+Cesta na Brod
+Slovenijales
+Brnciceva
+Slovenijales
+Cesta na Brod
+Obrtna cona
+Smelt
+AMZS
+Mercator
+Stadion
+Astra
+Razstavisce
+Kolizej,1
+
+22,Kamna Gorica,Fuzine,26
+Spar
+Bratov Babnik
+Koseze
+Bratov Ucakar
+Kneza Koclja
+Sisenska
+Slov. avto
+Kino Siska
+Drenikova
+Samova
+Astra
+Bezigrad
+Prekmurska
+Savske stolpnice
+Zale
+Pokopaliska
+Sola Jarse
+Tovorni Kolodvor
+Kajuhova,-1
+Zaloska,1
+Pot na Fuzine
+Brodarjev trg
+Preglov trg
+Rusjanov trg
