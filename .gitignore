@@ -16,4 +16,5 @@
 *.toc
 *.zip
 .DS_Store
+package.html
 __pycache__/
