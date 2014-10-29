@@ -1,0 +1,9 @@
+MIDlet-1: Kalkulator, Prova.png, ProvaMIDlet
+MIDlet-Description: Kalkulator
+MIDlet-Jar-Size: 11455
+MIDlet-Jar-URL: Kalkulator.jar
+MIDlet-Name: Kalkulator
+MIDlet-Vendor: Gothmog
+MIDlet-Version: 1.5
+MicroEdition-Configuration: CLDC-1.0
+MicroEdition-Profile: MIDP-2.0
