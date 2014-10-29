@@ -16,5 +16,5 @@
 *.toc
 *.zip
 .DS_Store
-package.html
+Thumbs.db
 __pycache__/
