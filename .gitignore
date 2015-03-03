@@ -15,6 +15,12 @@
 *.snm
 *.toc
 *.zip
+*.Rproj
 .DS_Store
+.RData
+.Rhistory
+.Rproj.user
 package.html
+Thumbs.db
 __pycache__/
+fun/zemljevidi/
