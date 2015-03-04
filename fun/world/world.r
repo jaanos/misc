@@ -14,14 +14,16 @@ capitals <- read.csv2("capitals.csv", row.names = 1)
 svet <- uvozi.zemljevid("http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip",
                              "ne_110m_admin_0_countries", encoding = "Windows-1252")
 
-divide.world <- function(c1, c2, xlim=c(-180, 180), ylim=c(-90, 90), add = FALSE,
+divide.world <- function(c1, c2, from = -180, to = 180, points = 1000, axes = FALSE,
+                         xlim=c(from, to), ylim=c(-90, 90), add = FALSE,
                          col = "red", col1 = "blue", col2 = "green", cex = 1) {
   if (!add) {
-    plot(svet, xlim=xlim, ylim=ylim)
+    plot(svet, xlim=xlim, ylim=ylim, axes=axes)
   }
-  curve(bisector.th(capitals[c1,"Longitude"], capitals[c1,"Latitude"],
-                    capitals[c2,"Longitude"], capitals[c2,"Latitude"])(x),
-        add = TRUE, col = "red")
+  x <- seq(from, to, (to-from)/(points-1))
+  y <- bisector.th(capitals[c1,"Longitude"], capitals[c1,"Latitude"],
+                   capitals[c2,"Longitude"], capitals[c2,"Latitude"])(x)
+  lines(x, y, col = col)
   points(capitals[c(c1, c2), c("Longitude", "Latitude")],
          pch = 15, col = c(col1, col2), cex = cex)
 }
