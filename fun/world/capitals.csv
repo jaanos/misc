@@ -5,11 +5,9 @@ Algeria;Algiers;36,75;3,04
 American Samoa;Pago Pago;-14,28;-170,70
 Andorra;Andorra la Vella;42,51;1,52
 Angola;Luanda;-8,84;13,23
-Anguilla;The Valley;18,22;-63,06
 Antigua and Barbuda;St. John's;17,12;-61,85
 Argentina;Buenos Aires;-34,61;-58,38
 Armenia;Yerevan;40,18;44,51
-Aruba;Oranjestad;12,52;-70,03
 Australia;Canberra;-35,28;149,13
 Austria;Vienna;48,21;16,37
 Azerbaijan;Baku;40,38;49,89
@@ -27,8 +25,6 @@ Bolivia;Sucre;-19,03;-65,26
 Bosnia and Herzegovina;Sarajevo;43,85;18,36
 Botswana;Gaborone;-24,65;25,91
 Brazil;Brasília;-15,78;-47,93
-British Indian Ocean Territory;Diego Garcia;72,46;7,24
-British Virgin Islands;Road Town;18,42;-64,62
 Brunei;Bandar Seri Begawan;4,94;114,95
 Bulgaria;Sofia;42,70;23,32
 Burkina Faso;Ouagadougou;12,37;-1,53
@@ -37,16 +33,12 @@ Cambodia;Phnom Penh;11,56;104,92
 Cameroon;Yaoundé;3,87;11,52
 Canada;Ottawa;45,41;-75,70
 Cape Verde;Praia;14,93;-23,51
-Cayman Islands;George Town;19,29;-81,37
 Central African Republic;Bangui;4,36;18,55
 Chad;N'Djamena;12,11;15,04
 Chile;Santiago;-33,46;-70,65
 China;Beijing;39,91;116,40
-Christmas Island;The Settlement;-10,42;105,68
-Cocos Islands;West Island;-12,16;96,82
 Colombia;Bogotá;4,61;-74,08
 Comoros;Moroni;-11,70;43,26
-Cook Islands;Avarua;-21,21;-159,78
 Costa Rica;San José;9,93;-84,08
 Croatia;Zagreb;45,81;15,98
 Cuba;Havana;23,13;-82,38
@@ -65,7 +57,6 @@ Equatorial Guinea;Malabo;3,75;8,78
 Eritrea;Asmara;15,33;38,93
 Estonia;Tallinn;59,44;24,75
 Ethiopia;Addis Ababa;9,02;38,75
-Falkland Islands;Stanley;-51,70;-57,85
 Faroe Islands;Tórshavn;62,01;-6,77
 Fiji;Suva;-18,14;178,44
 Finland;Helsinki;60,17;24,94
@@ -81,10 +72,8 @@ Gibraltar;Gibraltar;36,14;-5,35
 Greece;Athens;37,98;23,72
 Greenland;Nuuk (Godthåb);64,18;-51,72
 Grenada;St. George's;12,06;-61,75
-Guadeloupe;Basse-Terre;16,00;-61,73
 Guam;Hagåtña;13,48;144,75
 Guatemala;New Guatemala;14,64;-90,51
-Guernsey;St Peter Port;49,46;-2,54
 Guinea;Conakry;9,54;-13,68
 Guinea-Bissau;Bissau;11,86;-15,60
 Guyana;Georgetown;6,80;-58,16
@@ -98,13 +87,11 @@ Indonesia;Jakarta;-6,21;106,85
 Iran;Tehran;35,69;51,42
 Iraq;Baghdad;33,34;44,40
 Ireland;Dublin;53,33;-6,25
-Isle of Man;Douglas;54,15;-4,48
 Israel;Jerusalem;31,77;35,22
 Italy;Rome;41,89;12,48
 Ivory Coast;Yamoussoukro;6,82;-5,28
 Jamaica;Kingston;18,00;-76,79
 Japan;Edo;35,69;139,69
-Jersey;Saint Helier;49,19;-2,10
 Jordan;Amman;31,96;35,95
 Kazakhstan;Astana;51,18;71,45
 Kenya;Nairobi;-1,28;36,82
@@ -130,17 +117,14 @@ Maldives;Malé;4,17;73,51
 Mali;Bamako;12,65;-8,00
 Malta;Valletta;35,90;14,51
 Marshall Islands;Majuro;7,09;171,38
-Martinique;Fort-de-France;14,61;-61,07
 Mauritania;Nouakchott;18,09;-15,98
 Mauritius;Port Louis;-20,16;57,50
-Mayotte;Mamoutzou;-12,78;45,23
 Mexico;Mexico City;19,43;-99,13
 Micronesia;Palikir;6,92;158,16
 Moldova;Chişinău;47,01;28,86
 Monaco;Monaco;43,73;7,42
 Mongolia;Ulan Bator;47,91;106,88
 Montenegro;Podgorica;42,44;19,26
-Montserrat;Plymouth;16,71;-62,21
 Morocco;Rabat;34,01;-6,83
 Mozambique;Maputo;-25,97;32,58
 Myanmar;Nay Pyi Taw;19,75;96,13
@@ -148,16 +132,13 @@ Namibia;Windhoek;-22,56;17,08
 Nauru;Yaren;166,93;-0,54
 Nepal;Kathmandu;27,70;85,32
 Netherlands;Amsterdam;52,37;4,89
-Netherlands Antilles;Willemstad;-68,92;12,10
 New Caledonia;Noumea;-22,28;166,46
 New Zealand;Wellington;-41,29;174,78
 Nicaragua;Managua;12,13;-86,25
 Niger;Niamey;13,51;2,11
 Nigeria;Abuja;9,07;7,48
 Niue;Alofi;-19,06;-169,92
-Norfolk Island;Kingston;-29,05;167,97
 North Korea;Pyongyang;39,03;125,75
-Northern Mariana Islands;Saipan;15,21;145,75
 Norway;Oslo;59,91;10,75
 Oman;Muscat;23,61;58,59
 Pakistan;Islamabad;33,72;73,04
@@ -168,7 +149,6 @@ Papua New Guinea;Port Moresby;-9,44;147,18
 Paraguay;Asunción;-25,30;-57,64
 Peru;Lima;-12,04;-77,03
 Philippines;Manila;14,60;120,98
-Pitcairn;Adamstown;-25,07;-130,10
 Poland;Warsaw;52,23;21,01
 Portugal;Lisbon;38,72;-9,13
 Puerto Rico;San Juan;18,47;-66,11
@@ -178,12 +158,9 @@ Reunion;Saint-Denis;-20,88;55,45
 Romania;Bucharest;44,43;26,11
 Russia;Moscow;55,75;37,62
 Rwanda;Kigali;-1,95;30,06
-Saint Barthélemy;Gustavia;17,90;-62,85
 Saint Helena;Jamestown;-15,94;-5,72
 Saint Kitts and Nevis;Basseterre;17,29;-62,73
 Saint Lucia;Castries;14,00;-61,01
-Saint Martin;Marigot;18,07;-63,08
-Saint Pierre and Miquelon;Saint-Pierre;46,78;-56,17
 Saint Vincent and the Grenadines;Kingstown;13,16;-61,22
 Samoa;Apia;-13,83;-171,77
 San Marino;San Marino;43,94;12,45
@@ -199,13 +176,12 @@ Slovenia;Ljubljana;46,05;14,51
 Solomon Islands;Honiara;-9,43;159,95
 Somalia;Mogadishu;2,04;45,34
 South Africa;Pretoria;-25,74;28,19
-South Georgia and the South Sandwich Islands;Grytviken;-54,28;-36,51
 South Korea;Seoul;37,57;126,98
+South Sudan;Juba;31,60;4,85
 Spain;Madrid;40,42;-3,70
 Sri Lanka;Colombo;6,93;79,85
 Sudan;Khartoum;15,55;32,53
 Suriname;Paramaribo;5,87;-55,17
-Svalbard and Jan Mayen;Longyearbyen;78,22;15,64
 Swaziland;Mbabane;-26,32;31,13
 Sweden;Stockholm;59,33;18,06
 Switzerland;Berne;46,95;7,45
@@ -215,15 +191,12 @@ Tajikistan;Dushanbe;38,54;68,78
 Tanzania;Dodoma;-6,17;35,74
 Thailand;Bangkok;13,75;100,50
 Togo;Lomé;6,14;1,21
-Tokelau;Nukunonu;-171,85;-9,20
 Tonga;Nuku'alofa;-21,13;-175,20
 Trinidad and Tobago;Port of Spain;10,67;-61,52
 Tunisia;Tunis;36,82;10,17
 Turkey;Ankara;39,92;32,85
 Turkmenistan;Ashkhabad;37,95;58,38
-Turks and Caicos Islands;Cockburn Town;21,46;-71,14
 Tuvalu;Funafuti;-8,52;179,19
-U.S. Virgin Islands;Charlotte Amalie;18,34;-64,93
 Uganda;Kampala;0,32;32,58
 Ukraine;Kiev;50,45;30,52
 United Arab Emirates;Abu Dhabi;24,47;54,37
