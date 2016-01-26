@@ -6,6 +6,16 @@ CHG_TITLE() {
 		echo -ne "\033]0;[$1] $USER@$HOSTNAME: $(echo -n $PWD | sed -r "s@^/home/$USER(/|\$)@~\1@")\007" >&2
 	fi
 }
+CHG_RUN() {
+	if [ "$1" = "-t" ]; then
+		CHG_TITLE "$2"
+		shift
+		shift
+	else
+		CHG_TITLE "$1"
+	fi
+	"$@"
+}
 
 # some more ls aliases
 alias ll='ls -l'
@@ -26,31 +36,33 @@ alias n='nautilus'
 alias n.='nautilus .'
 
 # various
-alias ssha='CHG_TITLE ssh-add; ssh-add ~/.ssh/identity'
+alias ssha='CHG_RUN ssh-add ~/.ssh/identity'
 alias sshr='ssh-add -D'
 alias lssh='ps -ef | grep ssh'
 alias psgrep='ps -ef | grep'
 
 # applications
-alias gap='CHG_TITLE gap; gap'
-alias ipython='CHG_TITLE ipython; ipython'
-alias python='CHG_TITLE python; python'
-alias python3='CHG_TITLE python3; python3'
-alias octave='CHG_TITLE octave; octave'
-alias hping3='CHG_TITLE hping3; \sudo hping3'
-alias kismet='CHG_TITLE kismet; kismet'
-alias svim='CHG_TITLE "sudo vim"; \sudo vim'
-alias sudo='CHG_TITLE sudo; sudo'
-alias vim='CHG_TITLE vim; vim'
-alias less='CHG_TITLE less; less'
-alias top='CHG_TITLE top; top'
-alias man='CHG_TITLE man; man'
-alias svn='CHG_TITLE svn; svn'
-alias psql='CHG_TITLE psql; psql'
-alias mysql='CHG_TITLE mysql; mysql'
-alias R='CHG_TITLE R; R'
-alias ocaml='CHG_TITLE ocaml; ledit -l $(($COLUMNS-2)) ocaml'
-alias ghci='CHG_TITLE ghci; ghci'
+alias gap='CHG_RUN gap'
+alias ipython='CHG_RUN ipython'
+alias python='CHG_RUN python'
+alias python3='CHG_RUN python3'
+alias octave='CHG_RUN octave'
+alias hping3='CHG_RUN -t hping3 \sudo hping3'
+alias kismet='CHG_RUN kismet'
+alias svim='CHG_RUN -t "sudo vim" \sudo vim'
+alias sudo='CHG_RUN sudo'
+alias vim='CHG_RUN vim'
+alias less='CHG_RUN less'
+alias top='CHG_RUN top'
+alias man='CHG_RUN man'
+alias svn='CHG_RUN svn'
+alias psql='CHG_RUN psql'
+alias mysql='CHG_RUN mysql'
+alias sqlite3='CHG_RUN sqlite3'
+alias R='CHG_RUN R'
+alias ocaml='CHG_RUN -t ocaml ledit -l $(($COLUMNS-2)) ocaml'
+alias ghci='CHG_RUN ghci'
+alias sage='CHG_RUN sage'
 
 if [ -n "$SSH_CONNECTION" ]; then
     alias firefox='firefox -no-remote'
